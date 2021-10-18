@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Axios example with api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap -->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+  <!-- few icon -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="ab_btn">
+  <button class="btn btn-warning" onclick="refresh()">刷新 API</button>
+</div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm flex-nowrap">
+  <div class="container flex-nowrap">
+    <a class="navbar-brand" href="#">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜尋">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="ml-auto navbar-right">
+      <div class="avatar-thumbnail" data-target="avatar-thumbnail" id="nav_work">
+        <!-- working -->
+      </div>
+      <i class="fas fa-user-friends"></i>
+      <i class="fas fa-comment"></i>
+      <i class="fas fa-bell"></i>
+    </div>
+  </div>
+</nav>
+<!-- /navbar -->
+
+<div class="container pb-5">
+  <!-- header -->
+  <section class="header mb-3">
+    <div class="card mx-auto">
+      <img src="https://placeimg.com/1000/480/nature" class="card-img-top" alt="landscape">
+      <div data-target="profile" id="profile_work">
+        <!-- working -->
+      </div>
+      <div class="card-body">
+        <nav class="nav">
+          <a class="nav-link" href="#">動態時報</a>
+          <a class="nav-link active" href="#">關於</a>
+          <a class="nav-link" href="#">朋友</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- /header -->
+
+  <!-- about -->
+  <section class="about mb-3">
+    <div class="card mx-auto">
+      <div class="card-header">
+        <i class="fas fa-user mr-3"></i>
+        <span>關於</span>
+      </div>
+      <div class="card-body" >
+        <ul class="list-group list-group-flush" data-target="personal-info" id="about_work"></ul>
+          <!-- working -->
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  <!-- user-friends -->
+  <section class="friends">
+    <div class="card mx-auto">
+      <div class="card-header">
+        <i class="fas fa-user-friends mr-3"></i>
+        <span>朋友</span>
+      </div>
+      <div class="card-body" data-target="user-friends" id="friendpic">
+        <!-- working -->
+      </div>
+    </div>
+  </section>
+  <!-- /user-friends -->
+</div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
